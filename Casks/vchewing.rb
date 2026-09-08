@@ -4,8 +4,10 @@ cask "vchewing" do
 
   url "https://github.com/vChewing/vChewing-macOS/releases/download/#{version}/vChewing-macOS-#{version}-signed.pkg"
   name "vChewing (唯音輸入法)"
-  desc "[macOS 最安全的副廠注音輸入法] Phonabet-based input methods for typing Mandarin Chinese, providing native support for typing both Simplified and Traditional Chinese without conversions between them. This might be the only Chinese input method (for macOS) which is Sandboxed, and it won't send your data to anywhere outside your computer (nor security vulnerabilities)."
+  desc "Sandboxed Phonabet-based Mandarin Chinese input method"
   homepage "https://vchewing.github.io/"
+
+  depends_on macos: ">= :monterey"
 
   pkg "vChewing-macOS-#{version}-signed.pkg"
 
