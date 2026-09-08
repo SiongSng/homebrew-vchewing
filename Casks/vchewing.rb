@@ -7,7 +7,7 @@ cask "vchewing" do
   desc "Sandboxed Phonabet-based Mandarin Chinese input method"
   homepage "https://vchewing.github.io/"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   pkg "vChewing-macOS-#{version}-signed.pkg"
 
